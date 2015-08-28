@@ -17,3 +17,17 @@ Route::get('/', function () {
 
 
 Route::resource('escuelas', 'EscuelasController');
+Route::post('escuelas/observaciones/{id}', [
+    'as' => 'observaciones',
+    'uses' => 'EscuelasController@observaciones'
+]);
+
+
+Route::resource('convenios', 'ConveniosController');
+Route::resource('licitaciones', 'LicitacionesController');
+Route::resource('asuntos', 'AsuntosController');
+Route::resource('representaciones', 'RepresentacionesController');
+Route::resource('becas', 'BEcasController');
+Route::resource('eventos', 'EventosController');
+Route::resource('oferta', 'OfertaController');
+Route::resource('reforma', 'ReformaController');

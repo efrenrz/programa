@@ -16,14 +16,14 @@ class CreateEscuelasTable extends Migration
             $table->increments('id');
             $table->string('nombre')->unique()  ;
             $table->string('titular');
-            $table->integer('tiempo_en_cargo');
+            $table->string('tiempo_en_cargo');
             $table->string('designacion');
-            $table->date('terminacion');
+            $table->string('terminacion');
             $table->string('organigrama');
             $table->text('observaciones_generales');
             //datos finanncieros
             $table->integer('presupuesto_estatal');
-            $table->integer('presupUesto_federal');
+            $table->integer('presupuesto_federal');
             $table->integer('ingresos_propios');
             $table->integer('otros_estatales');
             $table->integer('otros_federales');
@@ -39,8 +39,19 @@ class CreateEscuelasTable extends Migration
             $table->text('origen_recursos');
             $table->integer('porcentaje_avance');
             $table->integer('recursos_ejercer');
-            $table->date('fecha_terminacion');
+            $table->string('fecha_terminacion');
             $table->text('observaciones_infraestructura');
+
+            //Obervaciones
+            $table->text('observaciones_convenios');
+            $table->text('observaciones_licitaciones');
+            $table->text('observaciones_asuntos');
+            $table->text('observaciones_representaciones');
+            $table->text('observaciones_becas');
+            $table->text('observaciones_eventos');
+            $table->text('observaciones_oferta');
+            $table->text('observaciones_reforma');
+
 
             $table->timestamps();
 

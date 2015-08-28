@@ -20,7 +20,6 @@
                             <td>{{ $escuela->titular }}</td>
                             <td>{{ $escuela->tiempo_en_cargo }}</td>
                             <td>
-
                                 <a href="#" class="btn-delete">Eliminar</a>
                             </td>
                         </tr>
